@@ -132,6 +132,6 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERYBEAT_SCHEDULE = {
     'generate-keys-task': {
         'task': 'api.tasks.generate_keys_task',
-        'schedule': crontab(minute="10"),
+        'schedule': crontab(minute="*"),
     }
 }
